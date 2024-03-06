@@ -7,9 +7,9 @@ TriangleMesh::TriangleMesh() {
     // Normalized Device Coordinates
     std::vector<float> positions = {
         -1.0f, -1.0f, 0.0f, 
-         1.f,  -1.0f, 0.0f, 
+         1.0f, -1.0f, 0.0f, 
         -1.0f,  1.0f, 0.0f,
-         1.0f,  0.6f, 0.0f,
+         1.0f,  1.0f, 0.0f,
     };
 
     std::vector<int> colorIndices = {

@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_opengl_project.dir/src/config.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/src/config.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/src/glad.c.o"
   "CMakeFiles/my_opengl_project.dir/src/glad.c.o.d"
   "CMakeFiles/my_opengl_project.dir/src/main.cpp.o"
   "CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d"
+  "CMakeFiles/my_opengl_project.dir/src/material.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/src/material.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o"
   "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o.d"
   "my_opengl_project"

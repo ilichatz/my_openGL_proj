@@ -1,5 +1,6 @@
 #include "config.h"
 #include "triangle_mesh.h"
+#include "material.h"
 
 
 unsigned int make_module(const std::string& filepath, unsigned int module_type);
@@ -102,7 +103,7 @@ int main() {
         return -1; 
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(1280, 960, "Hello World", NULL, NULL);
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
@@ -131,11 +132,21 @@ int main() {
 
 
     TriangleMesh* triangle = new TriangleMesh();
+    Material* material = new Material("../img/pydatastructures.jpg");
+    Material* mask = new Material("../img/mask.jpg");
 
     unsigned int shader = make_shader(
         "../src/shaders/vertex.txt",
         "../src/shaders/fragment.txt"
     );
+    //set texture units
+    glUseProgram(shader);
+    glUniform1i(glGetUniformLocation(shader, "material"), 0);
+    glUniform1i(glGetUniformLocation(shader, "mask"), 1);
+
+    // configure alpha blending
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 
 
@@ -155,6 +166,8 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(shader);
+        material->use(0);
+        mask->use(1);
         triangle->draw();
 
 
@@ -165,6 +178,8 @@ int main() {
     }
     glDeleteProgram(shader);
     delete triangle;
+    delete material;
+    delete mask;
     glfwDestroyWindow(window);
 
     glfwTerminate();
