@@ -1,5 +1,6 @@
-CMakeFiles/my_opengl_project.dir/src/main.cpp.o: \
-  /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp \
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o: \
+  /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp \
+  /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.h \
   /home/ilias/LinuxPlayground/cplusplus/my_project/src/config.h \
   /home/ilias/LinuxPlayground/cplusplus/my_project/src/./glad.h \
   /home/ilias/LinuxPlayground/cplusplus/my_project/src/khrplatform.h \
@@ -183,5 +184,4 @@ CMakeFiles/my_opengl_project.dir/src/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++io.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/fstream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/sstream \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/sstream.tcc \
-  /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.h
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/sstream.tcc

@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/g++"
+			"value" : "/usr/bin/clang++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -171,11 +171,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/llvm-ar-14"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,11 +187,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/llvm-ranlib-14"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc"
+			"value" : "/usr/bin/clang"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -299,11 +299,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/llvm-ar-14"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -315,11 +315,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/llvm-ranlib-14"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -525,6 +525,10 @@
 			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
 			"properties" : 
 			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
 				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
@@ -859,7 +863,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "0.1.0"
+			"value" : "0.2.0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -883,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",

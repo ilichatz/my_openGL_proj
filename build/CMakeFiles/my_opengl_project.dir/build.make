@@ -73,45 +73,61 @@ CMakeFiles/my_opengl_project.dir/src/main.cpp.o: CMakeFiles/my_opengl_project.di
 CMakeFiles/my_opengl_project.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/my_opengl_project.dir/src/main.cpp.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilias/LinuxPlayground/cplusplus/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_opengl_project.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/src/main.cpp.o -MF CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d -o CMakeFiles/my_opengl_project.dir/src/main.cpp.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/src/main.cpp.o -MF CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d -o CMakeFiles/my_opengl_project.dir/src/main.cpp.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp
 
 CMakeFiles/my_opengl_project.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_opengl_project.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp > CMakeFiles/my_opengl_project.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp > CMakeFiles/my_opengl_project.dir/src/main.cpp.i
 
 CMakeFiles/my_opengl_project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp -o CMakeFiles/my_opengl_project.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp -o CMakeFiles/my_opengl_project.dir/src/main.cpp.s
 
 CMakeFiles/my_opengl_project.dir/src/glad.c.o: CMakeFiles/my_opengl_project.dir/flags.make
 CMakeFiles/my_opengl_project.dir/src/glad.c.o: ../src/glad.c
 CMakeFiles/my_opengl_project.dir/src/glad.c.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilias/LinuxPlayground/cplusplus/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_opengl_project.dir/src/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/src/glad.c.o -MF CMakeFiles/my_opengl_project.dir/src/glad.c.o.d -o CMakeFiles/my_opengl_project.dir/src/glad.c.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/src/glad.c.o -MF CMakeFiles/my_opengl_project.dir/src/glad.c.o.d -o CMakeFiles/my_opengl_project.dir/src/glad.c.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c
 
 CMakeFiles/my_opengl_project.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_opengl_project.dir/src/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c > CMakeFiles/my_opengl_project.dir/src/glad.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c > CMakeFiles/my_opengl_project.dir/src/glad.c.i
 
 CMakeFiles/my_opengl_project.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_opengl_project.dir/src/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c -o CMakeFiles/my_opengl_project.dir/src/glad.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c -o CMakeFiles/my_opengl_project.dir/src/glad.c.s
+
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o: CMakeFiles/my_opengl_project.dir/flags.make
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o: ../src/triangle_mesh.cpp
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilias/LinuxPlayground/cplusplus/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o -MF CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o.d -o CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp
+
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp > CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.i
+
+CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp -o CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.s
 
 # Object files for target my_opengl_project
 my_opengl_project_OBJECTS = \
 "CMakeFiles/my_opengl_project.dir/src/main.cpp.o" \
-"CMakeFiles/my_opengl_project.dir/src/glad.c.o"
+"CMakeFiles/my_opengl_project.dir/src/glad.c.o" \
+"CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o"
 
 # External object files for target my_opengl_project
 my_opengl_project_EXTERNAL_OBJECTS =
 
 my_opengl_project: CMakeFiles/my_opengl_project.dir/src/main.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/src/glad.c.o
+my_opengl_project: CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/build.make
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 my_opengl_project: CMakeFiles/my_opengl_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilias/LinuxPlayground/cplusplus/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable my_opengl_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilias/LinuxPlayground/cplusplus/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable my_opengl_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_opengl_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
