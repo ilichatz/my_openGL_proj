@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c" "CMakeFiles/my_opengl_project.dir/src/glad.c.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/glad.c.o.d"
+  "/home/ilias/LinuxPlayground/cplusplus/my_project/src/config.cpp" "CMakeFiles/my_opengl_project.dir/src/config.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/config.cpp.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp" "CMakeFiles/my_opengl_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d"
+  "/home/ilias/LinuxPlayground/cplusplus/my_project/src/material.cpp" "CMakeFiles/my_opengl_project.dir/src/material.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/material.cpp.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp" "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o.d"
   )
 
