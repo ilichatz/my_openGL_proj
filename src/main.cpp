@@ -22,7 +22,7 @@ unsigned int make_shader(const std::string& vertex_filepath, const std::string& 
 	}
 	glLinkProgram(shader);
 
-	//Check the linking worked
+	//Check if the linking worked
 	int success;
 	glGetProgramiv(shader, GL_LINK_STATUS, &success);
 	if (!success) {
@@ -124,6 +124,10 @@ int main() {
 
     /* Change background color */
     glClearColor(0.75f, 0.5f, 0.15f, 1.0f);
+    // Set the rendering region to the actual screen size
+    int w, h;
+    glfwGetFramebufferSize(window, &w, &h);
+    glViewport(0, 0, w, h);
 
 
     TriangleMesh* triangle = new TriangleMesh();
@@ -159,7 +163,8 @@ int main() {
         glfwSwapBuffers(window);
         
     }
-
+    glDeleteProgram(shader);
+    delete triangle;
     glfwDestroyWindow(window);
 
     glfwTerminate();
