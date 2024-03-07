@@ -148,9 +148,18 @@ int main() {
 
     
     vec3 quad_position = {0.1f, -0.2f, 0.0f};
+    vec3 camera_pos = {-0.4f, 0.5f, 0.6f};
+    vec3 camera_target = {0.0f, 0.0f, 0.5f};
     // mat4 model = create_matrix_transformation(quad_position);    
     unsigned int model_location = glGetUniformLocation(shader, "model");
-    
+    unsigned int view_location = glGetUniformLocation(shader, "view");
+
+
+    mat4 view = create_look_at(camera_pos, camera_target);
+    glUniformMatrix4fv(view_location, 1, GL_FALSE, view.entries);
+
+
+
     // configure alpha blending
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -172,7 +181,9 @@ int main() {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        mat4 model = create_z_rotation(10 * glfwGetTime());
+        // mat4 model = create_z_rotation(10 * glfwGetTime());
+        mat4 model = create_model_transform(quad_position, 10 * glfwGetTime());
+
         glUniformMatrix4fv(model_location, 1, GL_FALSE, model.entries);
         
         

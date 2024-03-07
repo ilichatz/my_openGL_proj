@@ -6,9 +6,10 @@ out vec2 fragmentTexCoord;
 
 // below it is glsl's mat4 not our custom struct from la
 uniform mat4 model;
+uniform mat4 view;
 
 void main()
 {
-    gl_Position = model * vec4(vertexPos, 1.0);
-     fragmentTexCoord = vec2(0.5, -0.5) * (vertexPos.xy + vec2(1.0));
+    gl_Position = view * model * vec4(vertexPos, 1.0);
+    fragmentTexCoord = vec2(0.5, -0.5) * (vertexPos.xy + vec2(1.0));
 }
