@@ -1,6 +1,8 @@
 #include "config.h"
 #include "triangle_mesh.h"
 #include "material.h"
+#include "linear_algebros.h"
+
 
 
 unsigned int make_module(const std::string& filepath, unsigned int module_type);
@@ -144,6 +146,11 @@ int main() {
     glUniform1i(glGetUniformLocation(shader, "material"), 0);
     glUniform1i(glGetUniformLocation(shader, "mask"), 1);
 
+    
+    vec3 quad_position = {0.1f, -0.2f, 0.0f};
+    // mat4 model = create_matrix_transformation(quad_position);    
+    unsigned int model_location = glGetUniformLocation(shader, "model");
+    
     // configure alpha blending
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -165,6 +172,10 @@ int main() {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
+        mat4 model = create_z_rotation(10 * glfwGetTime());
+        glUniformMatrix4fv(model_location, 1, GL_FALSE, model.entries);
+        
+        
         glUseProgram(shader);
         material->use(0);
         mask->use(1);

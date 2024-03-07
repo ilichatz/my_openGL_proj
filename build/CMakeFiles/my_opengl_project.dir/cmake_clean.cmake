@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_opengl_project.dir/src/config.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/src/glad.c.o"
   "CMakeFiles/my_opengl_project.dir/src/glad.c.o.d"
+  "CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/src/main.cpp.o"
   "CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/src/material.cpp.o"

@@ -177,6 +177,30 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
+src/linear_algebros.o: src/linear_algebros.cpp.o
+.PHONY : src/linear_algebros.o
+
+# target to build an object file
+src/linear_algebros.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o
+.PHONY : src/linear_algebros.cpp.o
+
+src/linear_algebros.i: src/linear_algebros.cpp.i
+.PHONY : src/linear_algebros.i
+
+# target to preprocess a source file
+src/linear_algebros.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.i
+.PHONY : src/linear_algebros.cpp.i
+
+src/linear_algebros.s: src/linear_algebros.cpp.s
+.PHONY : src/linear_algebros.s
+
+# target to generate assembly for a file
+src/linear_algebros.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.s
+.PHONY : src/linear_algebros.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
+	@echo "... src/linear_algebros.o"
+	@echo "... src/linear_algebros.i"
+	@echo "... src/linear_algebros.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 20,
 				"parent" : 0
 			}
 		]
@@ -51,7 +51,8 @@
 				1,
 				2,
 				5,
-				6
+				6,
+				7
 			]
 		},
 		{
@@ -122,7 +123,8 @@
 				2,
 				4,
 				5,
-				6
+				6,
+				7
 			]
 		}
 	],
@@ -166,6 +168,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/material.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/linear_algebros.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],
