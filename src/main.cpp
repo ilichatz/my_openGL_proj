@@ -147,9 +147,10 @@ int main() {
     glUniform1i(glGetUniformLocation(shader, "mask"), 1);
 
     
-    vec3 quad_position = {0.1f, -0.2f, 0.0f};
-    vec3 camera_pos = {-0.4f, 0.5f, 0.6f};
-    vec3 camera_target = {0.0f, 0.0f, 0.5f};
+    glm::vec3 quad_position = {0.1f, -0.2f, 0.0f};
+    glm::vec3 camera_pos = {-0.4f, 0.5f, 0.6f};
+    glm::vec3 camera_target = {0.0f, 0.0f, 0.5f};
+    glm::vec3 up = {0.0f, 0.0f, 1.0f};
     // mat4 model = create_matrix_transformation(quad_position);    
     unsigned int model_location = glGetUniformLocation(shader, "model");
     unsigned int view_location = glGetUniformLocation(shader, "view");
@@ -157,13 +158,13 @@ int main() {
 
 
 
-    mat4 view = create_look_at(camera_pos, camera_target);
-    glUniformMatrix4fv(view_location, 1, GL_FALSE, view.entries);
+    glm::mat4 view = glm::lookAt(camera_pos, camera_target, up);
+    glUniformMatrix4fv(view_location, 1, GL_FALSE, glm::value_ptr(view));
 
-    mat4 projection = create_perspective_projection(
-        45.0f, w/h, 0.1f, 10.0f 
+    glm::mat4 projection = glm::perspective(
+        45.0f, (float)w/h, 0.1f, 10.0f 
     );
-    glUniformMatrix4fv(proj_location, 1, GL_FALSE, projection.entries);
+    glUniformMatrix4fv(proj_location, 1, GL_FALSE, glm::value_ptr(projection));
 
 
 
@@ -188,10 +189,16 @@ int main() {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // mat4 model = create_z_rotation(10 * glfwGetTime());
-        mat4 model = create_model_transform(quad_position, 10 * glfwGetTime());
 
-        glUniformMatrix4fv(model_location, 1, GL_FALSE, model.entries);
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, quad_position);
+        model = glm::rotate(model, (float)glfwGetTime(), {0.0f, 0.0f, 1.0f});
+        glUniformMatrix4fv(model_location, 1, GL_FALSE, glm::value_ptr(model));
+        //older...
+        // mat4 model = create_z_rotation(10 * glfwGetTime());
+        //mat4 model = create_model_transform(quad_position, 10 * glfwGetTime());
+
+        glUniformMatrix4fv(model_location, 1, GL_FALSE, glm::value_ptr(model));
         
         
         glUseProgram(shader);

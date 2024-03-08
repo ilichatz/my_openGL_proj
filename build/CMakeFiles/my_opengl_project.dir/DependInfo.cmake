@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/glad.c" "CMakeFiles/my_opengl_project.dir/src/glad.c.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/glad.c.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/config.cpp" "CMakeFiles/my_opengl_project.dir/src/config.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/config.cpp.o.d"
-  "/home/ilias/LinuxPlayground/cplusplus/my_project/src/linear_algebros.cpp" "CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/main.cpp" "CMakeFiles/my_opengl_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/main.cpp.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/material.cpp" "CMakeFiles/my_opengl_project.dir/src/material.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/material.cpp.o.d"
   "/home/ilias/LinuxPlayground/cplusplus/my_project/src/triangle_mesh.cpp" "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/src/triangle_mesh.cpp.o.d"

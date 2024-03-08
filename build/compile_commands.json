@@ -23,10 +23,5 @@
   "directory": "/home/ilias/LinuxPlayground/cplusplus/my_project/build",
   "command": "/usr/bin/clang++   -g -o CMakeFiles/my_opengl_project.dir/src/material.cpp.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/material.cpp",
   "file": "/home/ilias/LinuxPlayground/cplusplus/my_project/src/material.cpp"
-},
-{
-  "directory": "/home/ilias/LinuxPlayground/cplusplus/my_project/build",
-  "command": "/usr/bin/clang++   -g -o CMakeFiles/my_opengl_project.dir/src/linear_algebros.cpp.o -c /home/ilias/LinuxPlayground/cplusplus/my_project/src/linear_algebros.cpp",
-  "file": "/home/ilias/LinuxPlayground/cplusplus/my_project/src/linear_algebros.cpp"
 }
 ]
