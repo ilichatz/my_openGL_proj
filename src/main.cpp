@@ -153,10 +153,17 @@ int main() {
     // mat4 model = create_matrix_transformation(quad_position);    
     unsigned int model_location = glGetUniformLocation(shader, "model");
     unsigned int view_location = glGetUniformLocation(shader, "view");
+    unsigned int proj_location = glGetUniformLocation(shader, "projection");
+
 
 
     mat4 view = create_look_at(camera_pos, camera_target);
     glUniformMatrix4fv(view_location, 1, GL_FALSE, view.entries);
+
+    mat4 projection = create_perspective_projection(
+        45.0f, w/h, 0.1f, 10.0f 
+    );
+    glUniformMatrix4fv(proj_location, 1, GL_FALSE, projection.entries);
 
 
 

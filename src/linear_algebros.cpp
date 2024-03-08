@@ -141,6 +141,33 @@ mat4 create_look_at(vec3 from, vec3 to){
     return matrix;
 }
 
+mat4 create_perspective_projection(
+    float fovy, float aspect, float near, float far) {
+
+    fovy = fovy + PI / 360.0f;
+    float t = tanf(fovy);
+    float n = -near;
+    float f = -far;
+
+    mat4 matrix;
+
+    for (int i = 0; i <16; ++i){
+        matrix.entries[i] = 0.0f;
+    }
+
+    matrix.entries[0] = 1.0f / (aspect + t);
+    matrix.entries[5] = 1.0f / t;
+    matrix.entries[10] = -(n + f) / (n -f);
+    matrix.entries[11] = -1.0f;
+    matrix.entries[14] = 2 * n * f / (n - f);
+
+    return matrix;
+
+    }
+
+
+
+
 float dot(vec3 u, vec3 v){
     return u.entries[0]*v.entries[0] 
         + u.entries[1]*v.entries[1] 

@@ -17,6 +17,10 @@ mat4 create_model_transform(vec3 pos, float angle);
 
 mat4 create_look_at(vec3 from, vec3 to);
 
+mat4 create_perspective_projection(
+    float fovy, float aspect, float near, float far
+);
+
 float dot(vec3 u, vec3 v);
 
 vec3 normalize(vec3 v);
